@@ -4,6 +4,24 @@ Content-Type: application/json
 
 {
     "name" : "ArunK",
-    "email" : "aruncse12@gmail.com",
+    "email" : "aruncse14@gmail.com",
     "password" : "Welcome@123"
 }
+
+###
+POST  https://3000-arunk555-bookstore-k2j5f3ukxtt.ws-us77.gitpod.io/v1.0/admin/login
+Content-Type: application/json
+
+
+{
+    "email" : "aruncse14@gmail.com",
+    "password" : "Welcome@123"
+}
+
+###
+POST https://3000-arunk555-bookstore-k2j5f3ukxtt.ws-us77.gitpod.io/v1.0/admin/me
+Content-Type: application/json
+
+Authorization: Bearer 
+
+Authorization: Bearer 
