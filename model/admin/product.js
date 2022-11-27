@@ -9,12 +9,12 @@ const product = new Schema({
         maxlenght: 150
     },
     price:{
-        type: Double,
-        requied: true,
+        type: Number,
+        requied: true
     },
     currency:{
         type: String,
-        default: INR
+        default: 'INR'
     },
     image:{
         type: String,
