@@ -8,7 +8,7 @@ const admProdRoute = require('./route/admin/product');
 const { VERSION } =process.env;
 const mainRoute = VERSION;
 const admRoute =  "/"+mainRoute+"/admin";
-
+console.log(admRoute);
 app.use(express.json({
     limit: '500mb'
 }));
@@ -22,19 +22,19 @@ app.use(admRoute, admUserRoute);
 /* Product Route */
 app.use(admRoute, admProdRoute);
 
-app.get('/', (req, res)=>{
+/*app.get('/', (req, res)=>{
   return res.status(200).json({
     status: true,
     message: "Hi friends!"
   });
-});
+});*/
 
-/*app.use("*", function(req, res){
+app.use("*", function(req, res){
  return res.status(404).json({
    status: false,
    message: "Requsted route is not found!"
  });
-});*/
+});
 
 
 module.exports = app;
