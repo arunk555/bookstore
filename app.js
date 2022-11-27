@@ -8,7 +8,7 @@ const admProdRoute = require('./route/admin/product');
 const { VERSION } =process.env;
 const mainRoute = VERSION;
 const admRoute =  "/"+mainRoute+"/admin";
-console.log(admRoute);
+//console.log(admRoute);
 app.use(express.json({
     limit: '500mb'
 }));
