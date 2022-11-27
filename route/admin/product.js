@@ -7,9 +7,9 @@ router.get('/product/:id', (req, res)=>{
 
 });
 
-router.post('/product', (req, res)=>{
+/*router.post('/product', (req, res)=>{
 
-});
+});*/
 
 router.patch('/product/:id', (req, res)=>{
 
