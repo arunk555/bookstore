@@ -3,6 +3,7 @@ const express = require('express');
 const mongodb = require('./database/monodb').connect();
 const app = express();
 const admUserRoute = require('./route/admin/user');
+const admProdRoute = require('./route/admin/product');
 
 const { VERSION } =process.env;
 const mainRoute = VERSION;
@@ -16,7 +17,10 @@ app.use(express.urlencoded({
     extended: false
 }));
 
+/* Admin Users Route */
 app.use(admRoute, admUserRoute);
+/* Product Route */
+app.use(admRoute, admProdRoute);
 
 
 app.use("*", function(req, res){
