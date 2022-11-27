@@ -22,6 +22,12 @@ app.use(admRoute, admUserRoute);
 /* Product Route */
 app.use(admRoute, admProdRoute);
 
+app.get('/', (req, res)=>{
+  return res.status(200).json({
+    status: true,
+    message: "Hi friends!"
+  });
+});
 
 /*app.use("*", function(req, res){
  return res.status(404).json({
