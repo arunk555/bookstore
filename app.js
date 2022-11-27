@@ -23,12 +23,12 @@ app.use(admRoute, admUserRoute);
 app.use(admRoute, admProdRoute);
 
 
-app.use("*", function(req, res){
+/*app.use("*", function(req, res){
  return res.status(404).json({
    status: false,
    message: "Requsted route is not found!"
  });
-});
+});*/
 
 
 module.exports = app;
